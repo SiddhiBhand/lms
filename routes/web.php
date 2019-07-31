@@ -32,5 +32,5 @@ Route::get('/editemp/{id}', 'EmpController@edit');
 Route::get('/empall', 'EmpController@all');
 Route::post('/registeremp', 'EmpController@create');
 Route::post('/updateemp', 'EmpController@update');
-Route::get('/deleteclient/{id}', 'EmpController@destroy');
+Route::get('/deleteemp/{id}', 'EmpController@destroy');
 Route::get('/viewemp/{id}', 'EmpController@show');
