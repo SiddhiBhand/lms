@@ -3102,9 +3102,12 @@ select[multiple].input-lg {
   }
 }
 .btn {
+    width: 80px;
+
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
+
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;

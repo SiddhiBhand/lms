@@ -37,7 +37,7 @@
 <ul class="nav nav-tabs">
 <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true" id="tb1"><h5>Basic Details</h5></a></li>
 <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false" id="tb2"><h5>Rating</h5></a></li>
-<li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false"  id="tb3"><h5>Details</h5></a></li>
+
 </ul>
 <div class="tab-content">
 <div class="tab-pane active" id="tab_1">
@@ -49,39 +49,39 @@
 
 
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group " style="margin-left: 11px;">
 <label>Company name</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="cname" placeholder="Cname">
+<input type="text" class="form-control" name="cname" placeholder="Cname" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group " style="margin-left: 11px;">
 <label>Address</label><r style="color: red">*</r>
- <input type="text" class="form-control" name="address" placeholder="Address">
+ <input type="text" class="form-control" name="address" placeholder="Address" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group" style="margin-left: 11px;">
 <label>Constitution</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="constitution" placeholder="Constitution">
+<input type="text" class="form-control" name="constitution" placeholder="Constitution" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group " style="margin-left: 11px;">
 <label>City</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="city" placeholder="City">
+<input type="text" class="form-control" name="city" placeholder="City" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group " style="margin-left: 11px;">
 <label>Contperson</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="contperson" placeholder="Contperson">
+<input type="text" class="form-control" name="contperson" placeholder="Contperson" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group" style="margin-left: 11px;">
 <label>Email</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="email" placeholder="Email">
+<input type="text" class="form-control" name="email" placeholder="Email" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group" style="margin-left: 11px;">
   <label>Active Status:</label><r style="color: red;font-size: 20px">*</r>
-<input type="text" class="form-control" name="il" placeholder="status" disabled>
+<input type="text" class="form-control" name="il" placeholder="status" disabled style="width: 300px;">
 <br></div>
 
 <!-- <div class="form-group col-lg-3" style="padding-top: 18px">
@@ -99,65 +99,61 @@
 <div class="box-body">
      
 
-<div class="form-group col-lg-3">
- <label>Bank</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="bank" placeholder="Bank">
+<div class="form-group">
+<label>Industrytype</label>
+<input type="text" class="form-control" name="industrytype" placeholder="Industrytype" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3">
-<label>Total exposure(Bank Limit)</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="texposure" placeholder="Texposure">
+<div class="form-group">
+<label>Purpose</label>
+<input type="text" class="form-control" name="purpose" placeholder="Purpose" style="width: 300px;">
 <br></div>
 
-<div class="form-group col-lg-3">
-<label>Rated Exposure</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="Ratedexpo" placeholder="Ratedexpo">
-<br></div>
-
-<div class="form-group col-lg-3">
-<label>Rating History</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="ratinghist" placeholder="Ratinghist">
-<br></div>
-
-<div class="form-group col-lg-3">
- <label>Nextfolloup</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="nextfolloup" placeholder="Nextfolloup">
+<div class="form-group">
+<label>Status</label>
+<input type="text" class="form-control" name="status" placeholder="Status" style="width: 300px;">
 <br></div><br>
 
-<div class="form-group col-lg-3" style="padding-top: 18px">
-<a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>
-</div>
-<div class="form-group col-lg-3" style="padding-top: 18px">
-<input class="btn btn-success" onclick="document.getElementById('tb3').click()" name='Next' value="Next">
-<br>
-</div>
 
- </div>
+<div class="form-group">
+ <label>Bank</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="bank" placeholder="Bank" style="width: 300px;">
+<br></div>
+
+<div class="form-group">
+<label>Total exposure(Bank Limit)</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="texposure" placeholder="Texposure" style="width: 300px;">
+<br></div>
+
+<div class="form-group">
+<label>Rated Exposure</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="Ratedexpo" placeholder="Ratedexpo" style="width: 300px;">
+<br></div>
+
+<div class="form-group">
+<label>Rating History</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="ratinghist" placeholder="Ratinghist" style="width: 300px;">
+<br></div>
+
+<div class="form-group">
+ <label>Nextfolloup</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="nextfolloup" placeholder="Nextfolloup" style="width: 300px;">
+<br></div><br>
+
+
+
+
+<div class="form-group" style="padding-top: 18px">
+<input type='submit' class="btn btn-success " name='submit' value="Create"  >
 </div>
+ 
+
 
 
 <!-- /.tab-pane -->
-<div class="tab-pane " id="tab_3">
-<div class="box-body">           
 
-<div class="form-group col-lg-3">
-<label>Industrytype</label>
-<input type="text" class="form-control" name="industrytype" placeholder="Industrytype">
-<br></div>
 
-<div class="form-group col-lg-3">
-<label>Purpose</label>
-<input type="text" class="form-control" name="purpose" placeholder="Purpose">
-<br></div>
 
-<div class="form-group col-lg-3">
-<label>Status</label>
-<input type="text" class="form-control" name="status" placeholder="Status">
-<br></div><br>
-
-<div class=" col-lg-3" style="padding-left: 26px;">
-<input type='submit' class="btn btn-success " name='submit' value="Create"  >
-</div>
 
 </form>
 </div>

@@ -110,10 +110,6 @@
 <input type="text" class="form-control" name="status" placeholder="Status">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
-  <label>Roles</label><r style="color: red;font-size: 20px">*</r>
-<input type="text" class="form-control" name="roles" placeholder="Roles">
-<br></div>
 
 <div class="form-group col-lg-3" style="padding-top: 63px">
 <a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>
