@@ -68,10 +68,22 @@
 <input type="text" class="form-control" name="address" placeholder="Address" value="{{$emp->address}}">
 <br></div>
 
+
+ <div class="form-group col-lg-3" style="margin-left: 11px;">
+<label class="control-label">Gender</label><r style="color: red">*</r>
+<select name="gender" class="form-control">
+                    <option value="select1">--Please select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                    </div>    
+                
+
 <div class="form-group col-lg-3" style="margin-left: 11px;">
 <label>Gender</label><r style="color: red">*</r>
 <input type="text" class="form-control" name="gender" placeholder="Gender" value="{{$emp->gender}}">
 <br></div>
+
 
 <div class="form-group col-lg-3" style="margin-left: 11px;">
 <label>DOB</label><r style="color: red">*</r>
@@ -104,11 +116,154 @@
 <br></div>
 
 <div class="form-group col-lg-3" style="margin-left: 11px;">
+<<<<<<< HEAD
+<label class="control-label">Status</label><r style="color: red">*</r>
+<select name="status" class="form-control">
+                    <option value="select1">--Please select--</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    </select>
+                    </div>    
+ 
+<!-- <div class="form-group col-lg-3" style="padding-top: 18px">
+<a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>
+</div>
+
+<div class="form-group col-lg-3" style="padding-top: 18px">
+<input class="btn btn-success " onclick="document.getElementById('tb2').click()"  name='Next' value="Next">
+</div> -->
+
+</div>
+</div>
+<!-- /.tab-pane -->
+<div class="tab-pane " id="tab_2">
+<div class="box-body">
+     
+
+<div class="form-group col-lg-3">
+ <label>Account Name</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="acc_name" placeholder="Bank" value="{{$emp->acc_name}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Account No.</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="acc_no" placeholder="Account No." value="{{$emp->acc_no}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Bank Name</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="bank_name" placeholder="Bank Name" value="{{$emp->bank_name}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Branch</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="branch" placeholder="Branch" value="{{$emp->branch}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+ <label>IFSC Code</label><r style="color: red">*</r>
+<input type="text" class="form-control" name="ifsc_code" placeholder="IFSC Code" value="{{$emp->ifsc_code}}">
+<br></div><br>
+
+ </div>
+</div>
+
+
+<!-- /.tab-pane -->
+<div class="tab-pane " id="tab_3">
+<div class="box-body">           
+
+<div class="form-group col-lg-3">
+<label>Join Date</label>
+<input type="text" class="form-control" name="join_date" placeholder="Join Date" value="{{$emp->join_date}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Pan No.</label>
+<input type="text" class="form-control" name="pan_no" placeholder="Pan No." value="{{$emp->pan_no}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Adhar No.</label>
+<input type="text" class="form-control" name="adhar_no" placeholder="Adhar No." value="{{$emp->adhar_no}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Upload Adhar</label>
+<input type="text" class="form-control" name="upload_adhar" placeholder="Upload Adhar" value="{{$emp->upload_adhar}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Upload Pan</label>
+<input type="text" class="form-control" name="upload_pan" placeholder="Upload Pan" value="{{$emp->upload_pan}}">
+<br></div>
+
+<div class="form-group col-lg-3">
+<label>Upload Resume</label>
+<input type="text" class="form-control" name="upload_resume" placeholder="Adhar No." value="{{$emp->upload_resume}}">
+<br></div>
+
+
+ </div>
+</div>
+<input type="hidden" value="{{$emp->id}}" name="id">
+
+
+<div class="tab-pane " id="tab_4">
+<div class="box-body">
+
+<div class="form-group col-lg-3">
+<label>Designation</label>
+<input type="text" class="form-control" name="designation" placeholder="Designation" value="{{$emp->designation}}">
+<br></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class=" col-lg-3" style="padding-left: 26px;">
+<input type='submit' class="btn btn-success " name='submit' value="Submit"  >
+</div> -->
+
+<!-- <div class=" col-lg-3" style="padding-left: 26px;">
+</div> -->
+<div class="form-group col-lg-3" style="padding-top: 18px  width: 103px"  >
+<a href=""><input type='submit' class="btn btn-success" name='Submit' value="Submit" ></a>
+<br>
+</div>
+
+<div class="form-group col-lg-3" style="padding-top: 18px width: 103px">
+<a href="/empall"><input type='submit' class="btn btn-success" name='Cancel' value="Cancel"></a>
+<br>
+</div>
+
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+</div>
+</section>
+
+
+
   <label>Status</label><r style="color: red;font-size: 20px">*</r>
 <input type="text" class="form-control" name="status" placeholder="Status" value="{{$emp->status}}">
 <br></div>
 
-
+<div class="form-group col-lg-3" style="margin-left: 11px;">
+  <label>Roles</label><r style="color: red;font-size: 20px">*</r>
+<input type="text" class="form-control" name="roles" placeholder="Roles" value="{{$emp->roles}}">
+<br></div>
 
 <!-- <div class="form-group col-lg-3" style="padding-top: 18px">
 <a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>

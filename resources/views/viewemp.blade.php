@@ -16,7 +16,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Employee Update
+
         
       </h1>
       <ol class="breadcrumb">
@@ -108,6 +108,10 @@
 <input type="text" class="form-control" name="status" placeholder="Status" value="{{$emp->status}}" disabled="true">
 <br></div>
 
+<div class="form-group col-lg-3" style="margin-left: 11px;">
+  <label>Roles</label><r style="color: red;font-size: 20px">*</r>
+<input type="text" class="form-control" name="roles" placeholder="Roles" value="{{$emp->roles}}" disabled="true">
+<br></div>
 
 <!-- <div class="form-group col-lg-3" style="padding-top: 18px">
 <a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>
@@ -220,7 +224,15 @@
 </div> -->
 
 
+<div class="form-group col-lg-3" style="padding-top: 18px width: 103px">
+
+<!-- <div class="form-group col-lg-3" style="padding-top: 18px  width: 103px"  >
+<a href=""><input type='submit' class="btn btn-success" name='Submit' value="Submit" ></a>
+<br>
+</div> -->
+
 <div class="form-group col-lg-3" style="padding-top: 18px">
+
 <a href="/empall"><input type='submit' class="btn btn-success" name='Cancel' value="Cancel"></a>
 <br>
 </div>

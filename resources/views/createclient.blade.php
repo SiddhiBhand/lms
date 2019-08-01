@@ -5,10 +5,13 @@
 @section("content")
 
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel=”stylesheet” href=”https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css”>
 
+<link href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel=”stylesheet”>
+ 
+
+
+<!-- datepicker -->
 
 
   <!-- Content Wrapper. Contains page content -->
@@ -112,7 +115,7 @@
 <div class="form-group">
 <label>Status</label>
 <input type="text" class="form-control" name="status" placeholder="Status" style="width: 300px;">
-<br></div><br>
+<br></div>
 
 
 <div class="form-group">
@@ -135,10 +138,24 @@
 <input type="text" class="form-control" name="ratinghist" placeholder="Ratinghist" style="width: 300px;">
 <br></div>
 
-<div class="form-group">
- <label>Nextfolloup</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="nextfolloup" placeholder="Nextfolloup" style="width: 300px;">
-<br></div><br>
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                            <label>Nextfolloup</label><r style="color: red">*</r>
+
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 
 
 
@@ -165,13 +182,34 @@
 </section>
 
 
-</div>
-</body>
-</html>
+
+<script src="{{ asset('/js/bootstrap.min.css') }}"></script>
+<script src="{{ asset('/js/bootstrap-datetimepicker.min.css') }}"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+
+<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+
+<script src="{{ asset('/js/moment.js') }}"></script>
+
+
+<script src="{{ asset('/js/bootstrap-datetimepicker.min.js') }}"></script>
+
+ 
+
+
+
+ 
+
 <script type="text/javascript">
     function check(){
         document.getElementById('tb2').click();
     }
 </script>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script> 
+
 
 @endsection

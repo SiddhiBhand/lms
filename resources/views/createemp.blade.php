@@ -8,6 +8,7 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
 
 
 
@@ -40,7 +41,7 @@
 <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false"  id="tb3"><h5>Job Details</h5></a></li>
 <li class=""><a href="#tab_4" data-toggle="tab" aria-expanded="false"  id="tb4"><h5>Profile</h5></a></li>
 </ul>
-<div class="tab-content">
+<div class="tab-content" style="height: 535px;">
 <div class="tab-pane active" id="tab_1">
 
 <div class="box-body">
@@ -70,15 +71,19 @@
 <input type="text" class="form-control" name="address" placeholder="Address">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
-<label>Gender</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="gender" placeholder="Gender">
-<br></div>
+<div class="form-group col-lg-3" style="margin-left: 11px">
+<label class="control-label">Gender</label><r style="color: red">*</r>
+<select name="gender" class="form-control">
+<option value="select1">--Please select--</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>    
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
+<div class="form-group col-lg-3" style="margin-left: 11px">
 <label>DOB</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="dob" placeholder="DOB">
-<br></div>
+<input type='text' class="form-control" id="datepicker" name='dob' placeholder="dd/mm/yyyy"><br>
+</div>
 
 <div class="form-group col-lg-3" style="margin-left: 11px;">
   <label>Mobile</label><r style="color: red;font-size: 20px">*</r>
@@ -91,9 +96,18 @@
 <br></div>
 
 <div class="form-group col-lg-3" style="margin-left: 11px;">
-  <label>Blood Group</label><r style="color: red;font-size: 20px">*</r>
-<input type="text" class="form-control" name="bloodgrp" placeholder="Blood Group">
-<br></div>
+  <label>Blood Group:</label>
+<select class="form-control bloodgroup" name="bloodgrp">
+  <option value="Choose here">--Please Select--</option>
+  <option value="Male">A+</option>
+  <option value="Female">A-</option>
+  <option value="Male">B+</option>
+  <option value="Female">B-</option>
+  <option value="Male">AB+</option>
+  <option value="Female">o+</option>
+  <option value="Female">o-</option>
+</select>
+</div><br>
 
 <div class="form-group col-lg-3" style="margin-left: 11px;">
   <label>Emergency person name</label><r style="color: red;font-size: 20px">*</r>
@@ -105,18 +119,28 @@
 <input type="text" class="form-control" name="emp_per_mob" placeholder="Emergency person mobile no.">
 <br></div>
 
-<div class="form-group col-lg-3" style="margin-left: 11px;">
-  <label>Status</label><r style="color: red;font-size: 20px">*</r>
-<input type="text" class="form-control" name="status" placeholder="Status">
+<div class="form-group col-lg-3" style="margin-left: 11px">
+<label class="control-label">Status</label><r style="color: red">*</r>
+<select name="status" class="form-control">
+<option value="select1">--Please select--</option>
+<option value="active">Active</option>
+<option value="inactive">Inactive</option>
+</select>
+</div>   
+
+<!-- <div class="form-group col-lg-3" style="margin-left: 11px;">
+  <label>Roles</label><r style="color: red;font-size: 20px">*</r>
+<input type="text" class="form-control" name="roles" placeholder="Roles">
 <br></div>
-
-
-<div class="form-group col-lg-3" style="padding-top: 63px">
-<a href="/clientall"><input class="btn btn-info" name='cancel' value="Cancel"></a>
+ -->
+ <div class="row col-lg-12">
+<div class="form-group col-lg-6" >
+<a href="/empall" style="float: right;"><input class="btn btn-info" name='cancel' value="Cancel"></a>
 </div>
 
-<div class="form-group col-lg-3" style="padding-top: 63px">
+<div class="form-group col-lg-6" style="padding-left: 50px">
 <input class="btn btn-success " onclick="document.getElementById('tb2').click()"  name='Next' value="Next">
+</div>
 </div>
 
 </div>
@@ -168,9 +192,9 @@
 <div class="box-body">           
 
 <div class="form-group col-lg-3">
-<label>Join Date</label>
-<input type="text" class="form-control" name="join_date" placeholder="Join Date">
-<br></div>
+<label>Join Date</label><r style="color: red">*</r>
+<input type='text' class="form-control" id="datepicker2" name='join_date' placeholder="dd/mm/yyyy"><br>
+</div>
 
 <div class="form-group col-lg-3">
 <label>Pan No.</label>
@@ -184,17 +208,17 @@
 
 <div class="form-group col-lg-3">
 <label>Upload Adhar</label>
-<input type="text" class="form-control" name="upload_adhar" placeholder="Upload Adhar">
+<input type="file" class="form-control" name="upload_adhar" placeholder="Upload Adhar">
 <br></div>
 
 <div class="form-group col-lg-3">
 <label>Upload Pan</label>
-<input type="text" class="form-control" name="upload_pan" placeholder="Upload Pan">
+<input type="file" class="form-control" name="upload_pan" placeholder="Upload Pan">
 <br></div>
 
 <div class="form-group col-lg-3">
 <label>Upload Resume</label>
-<input type="text" class="form-control" name="upload_resume" placeholder="Adhar No.">
+<input type="file" class="form-control" name="upload_resume" placeholder="Upload Resume">
 <br></div>
 
 <div class="form-group col-lg-3" style="padding-top: 18px">
@@ -212,10 +236,17 @@
 <div class="tab-pane " id="tab_4">
 <div class="box-body">
 
-<div class="form-group col-lg-3">
-<label>Designation</label>
-<input type="text" class="form-control" name="designation" placeholder="Designation">
-<br></div>
+<div class="form-group col-lg-3" style="margin-left: 11px">
+<label class="control-label">Designation</label><r style="color: red">*</r>
+<select name="Designation" class="form-control">
+<option value="select1">--Please select--</option>
+<option value="calling">Calling</option>
+<option value="sales service">Sales Service</option>
+<option value="accounting">Accounting</option>
+
+</select>
+</div>  
+  
 
 <div class=" col-lg-3" style="padding-left: 26px;">
 <input type='submit' class="btn btn-success " name='submit' value="Create">
@@ -234,10 +265,42 @@
 </div>
 </body>
 </html>
+
+
+
+    <!-- In your Javascript (external .js resource or <script> tag) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script type="text/javascript">
     function check(){
         document.getElementById('tb2').click();
     }
+    </script>
+<!-- <script>
+  $('.select2').select2();
+</script> -->
+ <script >
+   
+    $('.bloodgroup').select2();
+ </script>
+ 
+<script src="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+<!-- bootstrap datepicker -->
+<script src="{{asset('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
+<script type="text/javascript">
+   $('#datepicker').datepicker({
+    autoclose: true,
+    format: 'dd/mm/yyyy'
+    });
+
+</script>
+
+<script type="text/javascript">
+   $('#datepicker2').datepicker({
+    autoclose: true,
+    format: 'dd/mm/yyyy'
+    });
+
 </script>
 
 @endsection

@@ -64,9 +64,10 @@ class ClientController extends Controller
      * @param  \App\customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function show(Customer $customer)
+    public function show($id)
     {
-        //
+        $client = Client::find($id);
+        return view('viewclient')->with(compact('client'));
     }
 
     /**

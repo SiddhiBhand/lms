@@ -95,7 +95,7 @@
                 <td>
                     <a href="editclient/{{$clientlist->id}}"><button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-pencil"></i></button></a>
                     
-                   <!--  <a href="viewclient/{{$clientlist->id}}"><button class="btn btn-sm btn-success badge" type="button"><i class="fa fa-eye"></i></button></a> -->
+                    <a href="viewclient/{{$clientlist->id}}"><button class="btn btn-sm btn-success badge" type="button"><i class="fa fa-eye"></i></button></a> 
                     
                     <a href="deleteclient/{{$clientlist->id}}"><button class="btn btn-sm btn-success" type="button"><i class="fa fa-trash"></i></button></a>                    
                 </td>
